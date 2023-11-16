@@ -10,27 +10,33 @@ body{
     align-items: center;
 }
 .container{
+    border-radius: 4px;
     height: fit-content;
-    width: 600px;
+    max-width: 500px;
+    width: 95%;
     display: flex;
     flex-direction: column;
     background-color: #DB2A6C;
-    padding: 5px;
+    padding: 10px;
 
 }
 .output{
+    border-radius: 4px;
     background-color: white;
     height: 100px;
     
 }
 .input{
+
     margin-top: 5px;
     display: grid;
     height: 400px;
     grid-template-rows: repeat(5, 1fr);
 
 }
-
+.input  *{
+    border-radius: 4px;
+}
 .main{
     grid-row: span 4;
     display: grid;
