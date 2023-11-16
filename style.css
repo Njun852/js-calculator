@@ -15,18 +15,54 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #DB2A6C;
+    padding: 5px;
+
 }
 .output{
     background-color: white;
     height: 100px;
+    
 }
 .input{
+    margin-top: 5px;
     display: grid;
     height: 400px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
-#equal{
-   
+
+.upper{
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+.main{
+    grid-column: span 6;
+    grid-row: span 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.side{
+    grid-row: span 4;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottom{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid{
+    display: grid;
+    gap: 5px;
+}
+
+
+
+
+
 
