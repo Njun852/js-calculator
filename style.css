@@ -40,7 +40,7 @@ body{
 .main{
     grid-row: span 4;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr) 1.5fr;
     grid-template-rows: repeat(4, 1fr);
 
 }
@@ -52,6 +52,27 @@ body{
     display: grid;
 
     gap: 5px;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.3rem;
+}
+
+button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#lower{
+    display: none;
+    opacity: 0.5;
+    font-size: 1.7rem;
+}
+#upper{
+    font-size: 3rem;
 }
 
 

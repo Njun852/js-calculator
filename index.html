@@ -9,35 +9,43 @@
 <body>
     <div class="container">
         <div class="output">
+           <h1 id="upper">0</h1>
+           <h1 id="lower">0</h1>
         </div>
         
         <div class="input grid">
             <div class="main grid">
-                <button>(</button>
-                <button>)</button>
-                <button>^</button>
-                <button>e</button>
-           
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>.</button>
-                <button>0</button>
-                <button>PI</button>
+                <button class="expression">(</button>
+                <button class="expression">7</button>
+                <button class="expression">8</button>
+                <button class="expression">9</button>
+                
+                <button class="expression">/</button>
+                <button class="expression">)</button>
+                <button class="expression">4</button>
+                <button class="expression">5</button>
+                <button class="expression">6</button>
+                <button class="expression">*</button>
+                <button class="expression">^</button>
+                <button class="expression">1</button>
+                <button class="expression">2</button>
+                <button class="expression">3</button>
+                <button class="expression">-</button>
+                <button class="expression">e</button>
+
+                <button class="expression">PI</button>
+                <button class="expression">0</button>
+                <button class="expression">.</button>
+                <button class="expression">+</button>
             </div>
             <div class="bottom grid">
-                <button>Clear</button>
-                <button>Del</button>
-                <button>=</button>
+                <button id="clear">Clear</button>
+                <button id="del">Del</button>
+                <button id="equal">=</button>
             </div>
         </div>
     </div>
+    <script src="calculate.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
